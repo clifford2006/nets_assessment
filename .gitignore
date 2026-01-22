@@ -1,0 +1,44 @@
+# Visual Studio / Rider / JetBrains
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+
+# Build Folders
+bin/
+obj/
+out/
+
+# ASP.NET Core / .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets / local config
+appsettings.Development.json
+appsettings.Secret.json
+*.env
