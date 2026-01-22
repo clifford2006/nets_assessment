@@ -79,16 +79,16 @@
 ---
 
 ### 2. Data Flow
-```mermaid ````
+```mermaid
 flowchart TD
-	A[Upstream Systems] -->|Submit Payment Instruction| B[API Layer]
-	B --> C[Util Layer(Validation)]
-	C -->|Valid| D[DB Layer]
-	C -->|Invalid| E[Return 400 Bad Request]
-	D --> F[Processing Queue / Downstream System]
-	F --> G[Settlement / Processing Integrator]
-	G --> F[Status Updates]
-	F --> D[Update Instruction Status in DB]
+	A[Upstream Systems] -->|Submit Payment Instruction| B[API Layer];
+	B --> C[Util Layer(Validation)];
+	C -->|Valid| D[DB Layer];
+	C -->|Invalid| E[Return 400 Bad Request];
+	D --> F[Processing Queue / Downstream System];
+	F --> G[Settlement / Processing Integrator];
+	G --> F[Status Updates];
+	F --> D[Update Instruction Status in DB];
 
 ---
 
