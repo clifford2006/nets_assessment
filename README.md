@@ -82,7 +82,7 @@
 ```mermaid
 flowchart TD
 	A[Upstream Systems] -->|Submit Payment Instruction| B[API Layer];
-	B --> C[Util Layer(Validation)];
+	B --> C[Util Layer-Validation];
 	C -->|Valid| D[DB Layer];
 	C -->|Invalid| E[Return 400 Bad Request];
 	D --> F[Processing Queue / Downstream System];
